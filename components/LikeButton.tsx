@@ -19,7 +19,7 @@ const LikeButton = ({ handleLike, handleDislike, likes }: IProps) => {
       setAlreadyLiked(false);
     }
   }, [filterLikes, likes]);
-  console.log("Already liked", alreadyLiked, filterLikes.length);
+ 
 
   return (
     <div className='flex gap-6'>
