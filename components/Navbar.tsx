@@ -13,7 +13,7 @@ import { createOrGetUser } from "../utils";
 import useAuthStore from "../store/authStore";
 const Navbar = () => {
   const router = useRouter();
-  const { userProfile, addUser, removeUser } = useAuthStore();
+  const { userProfile, addUser, removeUser }: any = useAuthStore();
   const [searchValue, setSearchValue] = useState("");
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
